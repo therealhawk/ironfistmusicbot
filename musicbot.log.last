@@ -1,0 +1,64 @@
+[115.985870361] 2019-01-02 09:21:40,222 - INFO - launcher: Starting sanity checks
+[116.980314255] 2019-01-02 09:21:40,223 - INFO - launcher: Checking for Python 3.5+
+[117.984771729] 2019-01-02 09:21:40,224 - INFO - launcher: Checking console encoding
+[118.981122971] 2019-01-02 09:21:40,225 - INFO - launcher: Setting console encoding to UTF-8
+[118.981122971] 2019-01-02 09:21:40,225 - INFO - launcher: Ensuring we're in the right environment
+[123.982429504] 2019-01-02 09:21:40,230 - INFO - launcher: Adding local bins/ folder to path
+[1710.076570511] 2019-01-02 09:21:41,817 - INFO - launcher: Required checks passed.
+[1711.071729660] 2019-01-02 09:21:41,818 - INFO - launcher: Optional checks passed.
+[1712.072610855] 2019-01-02 09:21:41,819 - INFO - launcher: Moving old musicbot log
+
+######################### PRE-RUN SANITY CHECKS PASSED #########################
+
+[4.3072245121002197] 2019-01-02 09:21:44,414 - WARNING - musicbot.config | In config.py::MainThread(9524), line 115 in run_checks: i18n file does not exist. Trying to fallback to config/i18n/en.json.
+[4.3082180023193359] 2019-01-02 09:21:44,415 - INFO - musicbot.config | In config.py::MainThread(9524), line 126 in run_checks: Using i18n: config/i18n/en.json
+[4.3192195892333984] 2019-01-02 09:21:44,426 - DEBUG - musicbot.bot | In bot.py::MainThread(9524), line 219 in _setup_logging: Set logging level to INFO
+[4.3332197666168213] 2019-01-02 09:21:44,440 - DEBUG - musicbot.json | In json.py::MainThread(9524), line 8 in __init__: Init JSON obj with config/i18n/en.json
+[4.4302527904510498] 2019-01-02 09:21:44,537 - INFO - musicbot.bot | In bot.py::MainThread(9524), line 84 in __init__: Starting MusicBot 1.9.8_3
+[4.4322257041931152] 2019-01-02 09:21:44,539 - INFO - musicbot.bot | In bot.py::MainThread(9524), line 90 in __init__: Loaded autoplaylist with 2531 entries
+[7.6968288421630859] 2019-01-02 09:21:47,803 - DEBUG - musicbot.bot | In bot.py::MainThread(9524), line 915 in on_ready: Connection established, ready to go.
+[7.6968288421630859] 2019-01-02 09:21:47,803 - DEBUG - musicbot.bot | In bot.py::MainThread(9524), line 333 in _cache_app_info: Caching app info
+[7.7978358268737793] 2019-01-02 09:21:47,904 - DEBUG - musicbot.bot | In bot.py::MainThread(9524), line 737 in _scheck_ensure_env: Ensuring data folders exist
+[7.8058373928070068] 2019-01-02 09:21:47,912 - DEBUG - musicbot.bot | In bot.py::MainThread(9524), line 753 in _scheck_server_permissions: Checking server permissions
+[7.8068370819091797] 2019-01-02 09:21:47,913 - DEBUG - musicbot.bot | In bot.py::MainThread(9524), line 757 in _scheck_autoplaylist: Auditing autoplaylist
+[7.8068370819091797] 2019-01-02 09:21:47,913 - DEBUG - musicbot.bot | In bot.py::MainThread(9524), line 761 in _scheck_configs: Validating config
+[7.8078434467315674] 2019-01-02 09:21:47,914 - DEBUG - musicbot.config | In config.py::MainThread(9524), line 216 in async_validate: Validating options...
+[7.8078434467315674] 2019-01-02 09:21:47,914 - DEBUG - musicbot.bot | In bot.py::MainThread(9524), line 764 in _scheck_configs: Validating permissions config
+[7.8088357448577881] 2019-01-02 09:21:47,915 - DEBUG - musicbot.permissions | In permissions.py::MainThread(9524), line 94 in async_validate: Validating permissions...
+[7.8088357448577881] 2019-01-02 09:21:47,915 - INFO - musicbot.bot | In bot.py::MainThread(9524), line 932 in on_ready: Connected: 530008038577537039/Ironfist#2038
+[7.8118381500244141] 2019-01-02 09:21:47,918 - INFO - musicbot.bot | In bot.py::MainThread(9524), line 940 in on_ready: Owner:     393090654223204353/The Real Hawk#1147
+
+[7.8128361701965332] 2019-01-02 09:21:47,919 - INFO - musicbot.bot | In bot.py::MainThread(9524), line 943 in on_ready: Guild List:
+[7.8158371448516846] 2019-01-02 09:21:47,922 - INFO - musicbot.bot | In bot.py::MainThread(9524), line 947 in on_ready:  - Darkness and Light Cult
+[7.8168387413024902] 2019-01-02 09:21:47,923 - INFO - musicbot.bot | In bot.py::MainThread(9524), line 947 in on_ready:  - discord together
+[7.8188369274139404] 2019-01-02 09:21:47,925 - INFO - musicbot.bot | In bot.py::MainThread(9524), line 1003 in on_ready: Not bound to any text channels
+[7.8208389282226562] 2019-01-02 09:21:47,927 - INFO - musicbot.bot | In bot.py::MainThread(9524), line 1029 in on_ready: Not autojoining any voice channels
+[15.4855556488037109] 2019-01-02 09:21:55,592 - ERROR - musicbot.bot | In bot.py::MainThread(9524), line 903 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\bradp_000\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 227, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\bradp_000\Desktop\Magic\MusicBot\musicbot\bot.py", line 2824, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\bradp_000\Desktop\Magic\MusicBot\musicbot\bot.py", line 424, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use +summon to summon it to your voice channel.
+[2001.1163966655731201] 2019-01-02 09:55:01,223 - ERROR - musicbot.bot | In bot.py::MainThread(9524), line 903 in on_error: Exception in on_voice_state_update
+Traceback (most recent call last):
+  File "C:\Users\bradp_000\AppData\Local\Programs\Python\Python37-32\lib\site-packages\discord\client.py", line 227, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\bradp_000\Desktop\Magic\MusicBot\musicbot\bot.py", line 2824, in on_voice_state_update
+    player = await self.get_player(channel)
+  File "C:\Users\bradp_000\Desktop\Magic\MusicBot\musicbot\bot.py", line 424, in get_player
+    'Use %ssummon to summon it to your voice channel.' % self.config.command_prefix)
+musicbot.exceptions.CommandError: The bot is not in a voice channel.  Use +summon to summon it to your voice channel.
+[2007.7568521499633789] 2019-01-02 09:55:07,863 - INFO - musicbot.bot | In bot.py::MainThread(9524), line 2626 in on_message: 393090654223204353/The Real Hawk#1147: +summon
+[2009.6600346565246582] 2019-01-02 09:55:09,767 - DEBUG - musicbot.bot | In bot.py::MainThread(9524), line 697 in deserialize_queue: Deserializing queue for 502220531202785301
+[2010.5370843410491943] 2019-01-02 09:55:10,644 - DEBUG - musicbot.bot | In bot.py::MainThread(9524), line 416 in get_player: Created player via deserialization for guild 502220531202785301 with 1 entries
+[2010.5390846729278564] 2019-01-02 09:55:10,646 - INFO - musicbot.bot | In bot.py::MainThread(9524), line 1886 in cmd_summon: Joining discord together/music-channel
+[2010.5470824241638184] 2019-01-02 09:55:10,654 - DEBUG - musicbot.entry | In entry.py::MainThread(9524), line 56 in get_ready_future: Created future for audio_cache\youtube-l7KEuKKuuas-Eminem_-_The_Real_Slim_Shady_Lyrics_HD_HQ.webm
+[2010.5470824241638184] 2019-01-02 09:55:10,654 - FFMPEG - musicbot.player | In player.py::MainThread(9524), line 273 in _play: Creating player with options: -nostdin -vn audio_cache\youtube-l7KEuKKuuas-Eminem_-_The_Real_Slim_Shady_Lyrics_HD_HQ.webm
+[2010.5580863952636719] 2019-01-02 09:55:10,665 - DEBUG - musicbot.player | In player.py::MainThread(9524), line 284 in _play: Playing <discord.player.PCMVolumeTransformer object at 0x035CC190> using <discord.voice_client.VoiceClient object at 0x049C1AD0>
+[2010.5800852775573730] 2019-01-02 09:55:10,687 - DEBUG - musicbot.bot | In bot.py::MainThread(9524), line 451 in on_player_play: Running on_player_play
+[2010.5820863246917725] 2019-01-02 09:55:10,689 - DEBUG - musicbot.bot | In bot.py::MainThread(9524), line 673 in serialize_queue: Serializing queue for 502220531202785301
+[2028.8363871574401855] 2019-01-02 09:55:28,943 - INFO - musicbot.bot | In bot.py::MainThread(9524), line 2626 in on_message: 393090654223204353/The Real Hawk#1147: +help
+[2057.3909380435943604] 2019-01-02 09:55:57,497 - INFO - musicbot.bot | In bot.py::MainThread(9524), line 2626 in on_message: 393090654223204353/The Real Hawk#1147: +help all
